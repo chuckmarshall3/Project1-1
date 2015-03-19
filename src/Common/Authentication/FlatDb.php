@@ -21,7 +21,7 @@ class FlatDb
 
     public function __construct(){
 
-        $file = realpath("flatDb.csv");//exit;
+        $file = realpath("../src/Common/Data/flatDb.csv");//exit;
         $this->flatDb = fopen($file, "r");
         $data=fgetcsv($this->flatDb);
         fclose($this->flatDb);

@@ -11,7 +11,7 @@
 namespace Common\Connections;
 
 
-class SQLite extends SQLite3{
+class SQLite extends \SQLite3{
 
     private static $_instance =null;  //Stores Database Instance
     private $_sqlite,
@@ -23,7 +23,7 @@ class SQLite extends SQLite3{
     //Construct DB Object
     public function __construct(){
 
-            $this->_sqlite = $this->open('../cs4350.db');
+            $this->_sqlite = $this->open('../src/Common/Data/cs4350.db');
 
     }
 

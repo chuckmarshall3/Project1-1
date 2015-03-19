@@ -21,10 +21,13 @@ abstract class View
      */
     public function show($data = array())
     {
+
         echo $this->content;
 
         //print_r($data);
 
 
     }
+
+
 }
