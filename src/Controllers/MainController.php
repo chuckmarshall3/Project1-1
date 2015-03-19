@@ -30,7 +30,7 @@ class MainController extends Controller
      */
     public function action()
     {
-        $view = new LoginForm();
+        $view = new LoginForm($data = array());
         $view->show();
     }
 }

@@ -44,10 +44,11 @@ class SimpleRequest implements IRequest
             );
         }
 
-        $this->data = json_decode(json_encode($_SERVER));
+        $this->data = json_decode(json_encode($serverGlobal));
 
         $this->post = null;
 
+        //TODO:  look into injecting POST data into method or class
         if ($this->data->REQUEST_METHOD === 'POST') {
             $this->post = json_decode(json_encode($_POST));
         }

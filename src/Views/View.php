@@ -10,6 +10,7 @@ abstract class View
      * @access protected
      */
     protected $content;
+    protected $data;
 
     /**
      * Function show - displays the content
@@ -18,8 +19,12 @@ abstract class View
      *
      * @access public
      */
-    public function show()
+    public function show($data = array())
     {
         echo $this->content;
+
+        //print_r($data);
+
+
     }
 }
