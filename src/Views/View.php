@@ -22,7 +22,10 @@ abstract class View
     public function show($data = array())
     {
 
-        echo $this->content;
+        $navigation = new Navigation();
+        echo $navigation->content;//Output Navigation to pages that extend View class
+
+        echo $this->content;//Output content of pages that extend View Class
 
         //print_r($data);
 

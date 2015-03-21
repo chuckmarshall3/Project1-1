@@ -19,7 +19,7 @@ class LoginForm extends View
         <meta charset="UTF-8">
     <title>CS4350 Project One Login</title>
 
-    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+
         <style>
           html {
             font-family: sans-serif;
@@ -157,7 +157,7 @@ class LoginForm extends View
                   <input type="password" id="password" name="password">
                 </div>
                 <div class="formcontrol">
-                  <label style="cursor: pointer">InMem <input type="radio" class="radio" name="memtype" value="inmem"> </label>
+                  <label style="cursor: pointer">InMem <input type="radio" class="radio" name="memtype" value="inmem" checked> </label>
                   <label style="cursor: pointer">InFile <input type="radio" class="radio" name="memtype" value="infile"> </label>
                   <label style="cursor: pointer">MySQL <input type="radio" class="radio" name="memtype" value="mysql"> </label>
                   <label style="cursor: pointer">SQLite <input type="radio" class="radio" name="memtype" value="sqlite"> </label>

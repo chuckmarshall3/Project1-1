@@ -3,7 +3,7 @@
 namespace Views;
 
 
-class Navigation extends View
+class Navigation
 {
     public function __construct()
     {
