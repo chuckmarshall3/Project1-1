@@ -61,13 +61,5 @@ class AuthController extends Controller
         ));
         $view->show();
 
-
-
-
-
-
-
-
-
     }
 }
